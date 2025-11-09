@@ -23,3 +23,9 @@ This repo showcases skills across **data collection → cleaning → modeling-re
 
 ## Architecture (current)
 
+NY Open Data APIs ──► fetch_api.py ──► data/processed/.csv
+└──► clean_data.py ───► data/clean/.csv
+└──► load_to_db.py ───► data/lottery.db
+└──► load_to_star.py ──► data/lottery_star.db
+└──► dq_checks.py ───► quality gates
+└──► build_indices.py ─► indexes + vacuum
